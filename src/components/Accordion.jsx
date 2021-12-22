@@ -7,7 +7,7 @@ const AccordionStyled = styled((props) => <Accordion {...props} />)(({ theme }) 
   backgroundColor: 'blue',
 }));
 const AccordionSummaryStyled = styled((props) => <AccordionSummary {...props} />)(({ theme }) => ({
-  backgroundColor: '#blue',
+  backgroundColor: '#5DADE2 ',
 }));
 const AccordionDetailsStyled = styled((props) => <AccordionDetails {...props} />)(({ theme }) => ({
   backgroundColor: '#bbbbbb',

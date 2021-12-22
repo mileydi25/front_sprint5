@@ -60,15 +60,15 @@ const NuevoProyecto = () => {
           <i className='fas fa-arrow-left' />
         </Link>
       </div>
-      <h1 className='text-2xl font-bold text-gray-900'>Crear Nuevo Proyecto</h1>
+      <h1 className='text-2xl font-bold text-gray-900'>Create New Project</h1>
       <form ref={form} onChange={updateFormData} onSubmit={submitForm}>
-        <Input name='nombre' label='Nombre del Proyecto' required={true} type='text' />
-        <Input name='presupuesto' label='Presupuesto del Proyecto' required={true} type='number' />
-        <Input name='fechaInicio' label='Fecha de Inicio' required={true} type='date' />
-        <Input name='fechaFin' label='Fecha de Fin' required={true} type='date' />
-        <DropDown label='Líder' options={listaUsuarios} name='lider' required={true} />
+        <Input name='nombre' label='name of project' required={true} type='text' />
+        <Input name='presupuesto' label='The project budget' required={true} type='number' />
+        <Input name='fechaInicio' label='Start date' required={true} type='date' />
+        <Input name='fechaFin' label='End date' required={true} type='date' />
+        <DropDown label='Leader' options={listaUsuarios} name='lider' required={true} />
         <Objetivos />
-        <ButtonLoading text='Crear Proyecto' loading={false} disabled={false} />
+        <ButtonLoading text='Create Project' loading={false} disabled={false} />
       </form>
     </div>
   );
@@ -98,7 +98,7 @@ const Objetivos = () => {
   return (
     <ObjContext.Provider value={{ eliminarObjetivo }}>
       <div>
-        <span>Objetivos del Proyecto</span>
+        <span>Project Objectives</span>
         {!maxObjetivos && (
           <i
             onClick={() => setListaObjetivos([...listaObjetivos, componenteObjetivoAgregado()])}
@@ -119,14 +119,14 @@ const FormObjetivo = ({ id }) => {
     <div className='flex items-center'>
       <Input
         name={`nested||objetivos||${id}||descripcion`}
-        label='Descripción'
+        label='Description'
         type='text'
         required={true}
       />
       <DropDown
         name={`nested||objetivos||${id}||tipo`}
         options={Enum_TipoObjetivo}
-        label='Tipo de Objetivo'
+        label='Objective Type'
         required={true}
       />
       <i
