@@ -43,7 +43,7 @@ const Logout = () => {
 const Logo = () => {
   return (
     <div className='py-3 w-full flex flex-col items-center justify-center'>
-      <img src='https://www.pngfind.com/pngs/m/268-2682921_projects-icon-png-transparent-png.png' alt='Logo' className='h-50' />
+      <img src='https://cdn-icons-png.flaticon.com/512/1586/1586536.png' alt='Logo' className='h-20' />
       <span className='my-2 text-xl font-bold text-center'>Student project management</span>
     </div>
   );
