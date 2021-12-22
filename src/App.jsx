@@ -26,9 +26,9 @@ import Profile from 'pages/profile';
 
 const httpLink = createHttpLink({
   
- // uri: 'http://localhost:4000/graphql',
+ uri: 'http://localhost:4000/graphql',
   // uri: 'https://evening-forest-24617.herokuapp.com/graphql',
-  uri: 'https://backendciclo4gestionproyectos.herokuapp.com/graphql',
+ // uri: 'https://backendciclo4gestionproyectos.herokuapp.com/graphql',
   
 });
 
